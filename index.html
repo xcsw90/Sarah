@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah Rajeh — DFIR & Security Analyst</title>
+  <meta name="description" content="Portfolio of Sarah Saleh Rajeh — Digital Forensics, Incident Response, SOC and Vehicle Forensics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a href="#top" class="logo"><span class="eye"></span>SR<span class="accent">_</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Education</a>
+      <a href="#contact" class="btn-sm">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <p class="mono tag">$ whoami</p>
+      <h1>Sarah Saleh Rajeh</h1>
+      <h2>DFIR &amp; SOC Analyst <span class="accent">//</span> Vehicle Forensics</h2>
+      <p class="lead">
+        I investigate what happened, detect what's happening, and preserve the evidence that proves it —
+        from SIEM alerts to the CAN bus of a car.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="cv.pdf" class="btn ghost" download>Download CV</a>
+      </div>
+      <ul class="stats">
+        <li><strong>Security+</strong><span>CompTIA Certified</span></li>
+        <li><strong>15</strong><span>Custom detection rules</span></li>
+        <li><strong>B.Sc.</strong><span>Computer Science</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <h3 class="section-title"><span class="mono">01.</span> About Me</h3>
+      <div class="about-grid">
+        <p>
+          I'm a Computer Science graduate from <b>Jazan University</b> and a CompTIA <b>Security+</b> certified
+          analyst, currently completing the <b>Advanced Cybercrime &amp; Digital Forensics</b> bootcamp at
+          <b>Tuwaiq Academy</b>.
+        </p>
+        <p>
+          My focus is Digital Forensics &amp; Incident Response: building detections that go beyond default rules,
+          running threat-intelligence pipelines, and handling evidence the right way. I'm especially drawn to
+          <b>vehicle forensics</b> — acquiring and analyzing data from modern cars, a field I'm actively building tools for.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <h3 class="section-title"><span class="mono">02.</span> Skills &amp; Tools</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Digital Forensics &amp; IR</h4>
+          <p>Evidence acquisition, chain of custody, timeline analysis, write-blocking, incident handling.</p>
+        </div>
+        <div class="card">
+          <h4>SOC &amp; Detection</h4>
+          <p>Wazuh SIEM, custom detection rules, attack simulation &amp; testing, alert triage.</p>
+        </div>
+        <div class="card">
+          <h4>Threat Intelligence</h4>
+          <p>MISP, Cortex, TheHive, IOC enrichment (VirusTotal, AbuseIPDB, Hybrid Analysis), MITRE ATT&amp;CK.</p>
+        </div>
+        <div class="card">
+          <h4>Vehicle Forensics</h4>
+          <p>CAN bus, SocketCAN / vcan, can-utils, building forensic tooling for vehicle data.</p>
+        </div>
+        <div class="card">
+          <h4>Programming</h4>
+          <p>Python, Bash, Linux administration, scripting for automation &amp; analysis.</p>
+        </div>
+        <div class="card">
+          <h4>Foundations</h4>
+          <p>Networking, operating systems, security concepts (Security+), documentation &amp; reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <h3 class="section-title"><span class="mono">03.</span> Projects</h3>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="mono label">Final Challenge · Tuwaiq Academy</span>
+          <h4>SREW — Government Security Operations Center</h4>
+        </div>
+        <p>
+          A fully custom-branded SOC built on <b>Wazuh SIEM</b>, white-labelled as "SREW". I designed a library of
+          <b>15 detection use cases</b> for the government sector — 10 advanced, creative rules written from scratch
+          rather than relying on built-in ones. Every rule was tested against its matching attack and documented
+          step-by-step.
+        </p>
+        <ul class="chips">
+          <li>Wazuh</li><li>Detection Engineering</li><li>Attack Simulation</li><li>MITRE ATT&amp;CK</li>
+        </ul>
+        <div class="links">
+          <a href="#">GitHub →</a>
+          <a href="#">Demo / Report →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="mono label">Threat Intelligence</span>
+          <h4>Multi-Org CTI Sharing Pipeline</h4>
+        </div>
+        <p>
+          A threat-intelligence environment with <b>three MISP organisations</b>: two produce events and IOCs
+          built on MITRE ATT&amp;CK and vendor reports, while the third consumes the published feed. Observables
+          are enriched through <b>Cortex</b> (VirusTotal, AbuseIPDB, Hybrid Analysis) and aggregated as cases in
+          <b>TheHive</b>.
+        </p>
+        <ul class="chips">
+          <li>MISP</li><li>Cortex</li><li>TheHive</li><li>IOC Enrichment</li>
+        </ul>
+        <div class="links">
+          <a href="#">GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="mono label">Vehicle Forensics · Research</span>
+          <h4>EyeWolf — Virtual Vehicle Write Blocker</h4>
+        </div>
+        <p>
+          A Python tool (<code>eyewolf.py</code>) that acts as a software write blocker for vehicle CAN networks,
+          so investigators can read data from a car without altering it. Built and tested in a virtual lab using
+          <b>vcan</b> and <b>can-utils</b>.
+        </p>
+        <ul class="chips">
+          <li>Python</li><li>CAN Bus</li><li>SocketCAN / vcan</li><li>can-utils</li>
+        </ul>
+        <div class="links">
+          <a href="#">GitHub →</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== EDUCATION & CERTS ===== -->
+    <section id="certs" class="section">
+      <h3 class="section-title"><span class="mono">04.</span> Education &amp; Certifications</h3>
+      <ol class="timeline">
+        <li>
+          <span class="mono date">2026</span>
+          <div>
+            <h4>Advanced Cybercrime &amp; Digital Forensics Bootcamp</h4>
+            <p>Tuwaiq Academy</p>
+          </div>
+        </li>
+        <li>
+          <span class="mono date">2022 – 2026</span>
+          <div>
+            <h4>B.Sc. Computer Science</h4>
+            <p>Jazan University</p>
+          </div>
+        </li>
+        <li>
+          <span class="mono date">Certified</span>
+          <div>
+            <h4>CompTIA Security+</h4>
+            <p>CompTIA</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+      <h3 class="section-title"><span class="mono">05.</span> Get In Touch</h3>
+      <p class="lead">Open to DFIR, SOC and cybersecurity roles. Let's talk.</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+        <a href="https://www.linkedin.com/in/your-profile" class="btn ghost" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/your-username" class="btn ghost" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="mono">© 2026 Sarah Saleh Rajeh · <span class="accent">evidence never lies</span></p>
+  </footer>
+
+</body>
+</html>
